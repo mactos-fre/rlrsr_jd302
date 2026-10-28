@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mactos-fre-rlrsr_jd302"
+version = "0.1.0"
+description = "从样本里推断强化学习研究员·查询改写的语义漂移应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "mactos-fre" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://mactos-fre.github.io"
+Repository = "https://github.com/mactos-fre/rlrsr_jd302"
+Issues = "https://github.com/mactos-fre/rlrsr_jd302/issues"
+
+[project.scripts]
+rlrsr_jd302 = "rlrsr_jd302:main"
+
+[tool.setuptools]
+py-modules = ["rlrsr_jd302"]
